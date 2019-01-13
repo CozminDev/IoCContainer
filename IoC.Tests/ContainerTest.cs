@@ -15,7 +15,7 @@ namespace IoC.Tests
             container = new Container();
         }
         [TestMethod]
-        public void CreatesAInstanceWithParams()
+        public void CreatesAInstanceWithNoParams()
         {
             var subject = (A) container.GetInstance(typeof(A));
             Assert.IsInstanceOfType(subject, typeof(A));
